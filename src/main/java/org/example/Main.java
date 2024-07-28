@@ -5,10 +5,14 @@ import org.example.adaptorDesignPattern.AdaptorDesignPatternDemo;
 import org.example.bridgeDesignPattern.BridgeDesignPatternDemo;
 import org.example.builderDesignPattern.BuilderDesignPatternDemo;
 import org.example.chainOfResponsibilityDesignPattern.ChainOfResponsibilityDemo;
+import org.example.commandDesignPattern.CommandDesignPatternDemo;
 import org.example.compositeDesignPattern.CompositeDesignPatternDemo;
 import org.example.decoratorDesignPattern.DecoratorDesignPatternDemo;
 import org.example.facadeDesignPattern.FacadeDesignPatternDemo;
 import org.example.factoryDesignPattern.FactoryDeisgnPatternDemo;
+import org.example.flyweightPattern.FlyweightPatternDemo;
+import org.example.interpreterDesignPattern.InterpreterDesignPatternDemo;
+import org.example.iteratorDesignPattern.IteratorDesignPatternDemo;
 import org.example.nullObjectPattern.NullObjectPatternDemo;
 import org.example.observerDesignPattern.ObserverDesignPatternDemo;
 import org.example.prototypeDesignPattern.PrototypeDesignPatternDemo;
@@ -93,7 +97,23 @@ public class Main {
 //        bridgeDesignPatternDemo.run();
 
 //        Facade design pattern ( hide complexity from user )
-        FacadeDesignPatternDemo facadeDesignPatternDemo = new FacadeDesignPatternDemo();
-        facadeDesignPatternDemo.run();
+//        FacadeDesignPatternDemo facadeDesignPatternDemo = new FacadeDesignPatternDemo();
+//        facadeDesignPatternDemo.run();
+
+//        Flying weight design pattern
+//        FlyweightPatternDemo flyweightPatternDemo = new FlyweightPatternDemo();
+//        flyweightPatternDemo.run();
+
+//        Command design pattern demo
+//        CommandDesignPatternDemo commandDesignPatternDemo = new CommandDesignPatternDemo();
+//        commandDesignPatternDemo.run();
+
+//        Interpreter deisgn pattern
+//        InterpreterDesignPatternDemo interpreterDesignPatternDemo = new InterpreterDesignPatternDemo();
+//        interpreterDesignPatternDemo.run();
+
+//        Iterator design pattern
+        IteratorDesignPatternDemo iteratorDesignPatternDemo = new IteratorDesignPatternDemo();
+        iteratorDesignPatternDemo.run();
     }
 }
