@@ -20,120 +20,93 @@ import org.example.observerDesignPattern.ObserverDesignPatternDemo;
 import org.example.prototypeDesignPattern.PrototypeDesignPatternDemo;
 import org.example.proxyDesignPattern.ProxyPatternDemo;
 import org.example.singletonDesignPattern.SingletonDesignPatternDemo;
-import org.example.stateDesignPattern.Context;
 import org.example.stateDesignPattern.StateDesignPatternDemo;
 import org.example.strategyDesignPattern.StrategyPattern;
 import org.example.templateMethodPattern.TemplateMethodPatternDemo;
 import org.example.visitorDesignPattern.VisitorDesignPatternDemo;
 
-import java.util.Locale;
-
 public class Main {
     public static void main(String[] args) {
 
+        final String designPatternName = "AbstractFactoryDesignPatternDemo";
 
-//        Strategy pattern
-//        StrategyPattern strategyPattern = new StrategyPattern();
-//        strategyPattern.run("bitcoin");
-//        strategyPattern.run("cash");
+        switch (designPatternName) {
+            case "AbstractFactoryDesignPatternDemo":
+                new AbstractFactoryDesignPatternDemo().run();
+                break;
+            case "AdaptorDesignPatternDemo":
+                new AdaptorDesignPatternDemo().run();
+                break;
+            case "BridgeDesignPatternDemo":
+                new BridgeDesignPatternDemo().run();
+                break;
+            case "BuilderDesignPatternDemo":
+                new BuilderDesignPatternDemo().run();
+                break;
+            case "ChainOfResponsibilityDemo":
+                new ChainOfResponsibilityDemo().run();
+                break;
+            case "CommandDesignPatternDemo":
+                new CommandDesignPatternDemo().run();
+                break;
+            case "CompositeDesignPatternDemo":
+                new CompositeDesignPatternDemo().run();
+                break;
+            case "DecoratorDesignPatternDemo":
+                new DecoratorDesignPatternDemo().run();
+                break;
+            case "FacadeDesignPatternDemo":
+                new FacadeDesignPatternDemo().run();
+                break;
+            case "FactoryDeisgnPatternDemo":
+                new FactoryDeisgnPatternDemo().run();
+                break;
+            case "FlyweightPatternDemo":
+                new FlyweightPatternDemo().run();
+                break;
+            case "InterpreterDesignPatternDemo":
+                new InterpreterDesignPatternDemo().run();
+                break;
+            case "IteratorDesignPatternDemo":
+                new IteratorDesignPatternDemo().run();
+                break;
+            case "MediatorDesignPatternDemo":
+                new MediatorDesignPatternDemo().run();
+                break;
+            case "MomentoDesignPatternDemo":
+                new MomentoDesignPatternDemo().run();
+                break;
+            case "NullObjectPatternDemo":
+                new NullObjectPatternDemo().run();
+                break;
+            case "ObserverDesignPatternDemo":
+                new ObserverDesignPatternDemo().run();
+                break;
+            case "PrototypeDesignPatternDemo":
+                new PrototypeDesignPatternDemo().run();
+                break;
+            case "ProxyPatternDemo":
+                new ProxyPatternDemo().run();
+                break;
+            case "SingletonDesignPatternDemo":
+                new SingletonDesignPatternDemo().run();
+                break;
+            case "StateDesignPatternDemo":
+                new StateDesignPatternDemo().run();
+                break;
+            case "StrategyPattern":
+                new StrategyPattern().run("bitcoin");
+                new StrategyPattern().run("cash");
+                break;
+            case "TemplateMethodPatternDemo":
+                new TemplateMethodPatternDemo().run();
+                break;
+            case "VisitorDesignPatternDemo":
+                new VisitorDesignPatternDemo().run();
+                break;
+            default:
+                System.out.println("Please choose the correct design pattern. Provided is : " + designPatternName);
 
-
-//        Observer pattern
-//        ObserverDesignPatternDemo observerDesignPatternDemo = new ObserverDesignPatternDemo();
-//        observerDesignPatternDemo.run();
-
-////        Decorator design pattern
-//        DecoratorDesignPatternDemo decoratorDesignPatternDemo = new DecoratorDesignPatternDemo();
-//        decoratorDesignPatternDemo.run();
-
-
-//        Factory design pattern
-//        FactoryDeisgnPatternDemo factoryDeisgnPatternDemo = new FactoryDeisgnPatternDemo();
-//        factoryDeisgnPatternDemo.run();
-
-
-//        Abstract Factory pattern
-//        AbstractFactoryDesignPatternDemo abstractFactoryDesignPatternDemo = new AbstractFactoryDesignPatternDemo();
-//        abstractFactoryDesignPatternDemo.run();
-
-
-//        Chain of responsibility design pattern
-//        ChainOfResponsibilityDemo chainOfResponsibilityDemo = new ChainOfResponsibilityDemo();
-//        chainOfResponsibilityDemo.run();
-
-//        Proxy pattern demo for laoding image for once only
-//        ProxyPatternDemo proxyPatternDemo = new ProxyPatternDemo();
-//        proxyPatternDemo.run();
-
-//        Null object pattern
-//        NullObjectPatternDemo nullObjectPatternDemo = new NullObjectPatternDemo();
-//        nullObjectPatternDemo.run();
-
-//        State design pattern
-//        StateDesignPatternDemo stateDesignPatternDemo = new StateDesignPatternDemo();
-//        stateDesignPatternDemo.run();
-
-
-//        Composite design pattern
-//        CompositeDesignPatternDemo compositeDesignPatternDemo = new CompositeDesignPatternDemo();
-//        compositeDesignPatternDemo.run();
-
-
-//        Adaptor design pattern
-//        AdaptorDesignPatternDemo adaptorDesignPatternDemo = new AdaptorDesignPatternDemo();
-//        adaptorDesignPatternDemo.run();
-
-//        Singleton design pattern demo
-//        SingletonDesignPatternDemo singletonDesignPatternDemo = new SingletonDesignPatternDemo();
-//        singletonDesignPatternDemo.run();
-
-//        Builder design pattern
-//        BuilderDesignPatternDemo builderDesignPatternDemo = new BuilderDesignPatternDemo();
-//        builderDesignPatternDemo.run();
-
-
-//        Prototype design pattern
-//        PrototypeDesignPatternDemo prototypeDesignPatternDemo = new PrototypeDesignPatternDemo();
-//        prototypeDesignPatternDemo.run();
-
-//        Bridge design pattern
-//        BridgeDesignPatternDemo bridgeDesignPatternDemo = new BridgeDesignPatternDemo();
-//        bridgeDesignPatternDemo.run();
-
-//        Facade design pattern ( hide complexity from user )
-//        FacadeDesignPatternDemo facadeDesignPatternDemo = new FacadeDesignPatternDemo();
-//        facadeDesignPatternDemo.run();
-
-//        Flying weight design pattern
-//        FlyweightPatternDemo flyweightPatternDemo = new FlyweightPatternDemo();
-//        flyweightPatternDemo.run();
-
-//        Command design pattern demo
-//        CommandDesignPatternDemo commandDesignPatternDemo = new CommandDesignPatternDemo();
-//        commandDesignPatternDemo.run();
-
-//        Interpreter deisgn pattern
-//        InterpreterDesignPatternDemo interpreterDesignPatternDemo = new InterpreterDesignPatternDemo();
-//        interpreterDesignPatternDemo.run();
-
-//        Iterator design pattern
-//        IteratorDesignPatternDemo iteratorDesignPatternDemo = new IteratorDesignPatternDemo();
-//        iteratorDesignPatternDemo.run();
-
-//        Mediator design pattern
-//        MediatorDesignPatternDemo mediatorDesignPatternDemo = new MediatorDesignPatternDemo();
-//        mediatorDesignPatternDemo.run();
-
-//        Momonto design pattern
-//        MomentoDesignPatternDemo momentoDesignPatternDemo = new MomentoDesignPatternDemo();
-//        momentoDesignPatternDemo.run();
-
-//        Template design pattern
-//        TemplateMethodPatternDemo templateMethodPatternDemo = new TemplateMethodPatternDemo();
-//        templateMethodPatternDemo.run();
-
-//        visitor design pattern
-        VisitorDesignPatternDemo visitorDesignPatternDemo = new VisitorDesignPatternDemo();
-        visitorDesignPatternDemo.run();
+        }
     }
 }
