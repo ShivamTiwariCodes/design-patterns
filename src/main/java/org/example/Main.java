@@ -13,6 +13,8 @@ import org.example.factoryDesignPattern.FactoryDeisgnPatternDemo;
 import org.example.flyweightPattern.FlyweightPatternDemo;
 import org.example.interpreterDesignPattern.InterpreterDesignPatternDemo;
 import org.example.iteratorDesignPattern.IteratorDesignPatternDemo;
+import org.example.mediatorDesignPattern.MediatorDesignPatternDemo;
+import org.example.momentoDesignPattern.MomentoDesignPatternDemo;
 import org.example.nullObjectPattern.NullObjectPatternDemo;
 import org.example.observerDesignPattern.ObserverDesignPatternDemo;
 import org.example.prototypeDesignPattern.PrototypeDesignPatternDemo;
@@ -21,6 +23,8 @@ import org.example.singletonDesignPattern.SingletonDesignPatternDemo;
 import org.example.stateDesignPattern.Context;
 import org.example.stateDesignPattern.StateDesignPatternDemo;
 import org.example.strategyDesignPattern.StrategyPattern;
+import org.example.templateMethodPattern.TemplateMethodPatternDemo;
+import org.example.visitorDesignPattern.VisitorDesignPatternDemo;
 
 import java.util.Locale;
 
@@ -113,7 +117,23 @@ public class Main {
 //        interpreterDesignPatternDemo.run();
 
 //        Iterator design pattern
-        IteratorDesignPatternDemo iteratorDesignPatternDemo = new IteratorDesignPatternDemo();
-        iteratorDesignPatternDemo.run();
+//        IteratorDesignPatternDemo iteratorDesignPatternDemo = new IteratorDesignPatternDemo();
+//        iteratorDesignPatternDemo.run();
+
+//        Mediator design pattern
+//        MediatorDesignPatternDemo mediatorDesignPatternDemo = new MediatorDesignPatternDemo();
+//        mediatorDesignPatternDemo.run();
+
+//        Momonto design pattern
+//        MomentoDesignPatternDemo momentoDesignPatternDemo = new MomentoDesignPatternDemo();
+//        momentoDesignPatternDemo.run();
+
+//        Template design pattern
+//        TemplateMethodPatternDemo templateMethodPatternDemo = new TemplateMethodPatternDemo();
+//        templateMethodPatternDemo.run();
+
+//        visitor design pattern
+        VisitorDesignPatternDemo visitorDesignPatternDemo = new VisitorDesignPatternDemo();
+        visitorDesignPatternDemo.run();
     }
 }
